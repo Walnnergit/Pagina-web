@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntex | Acceso al sistema</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header class="header">
+        <input type="checkbox" class="header__checkbox" id="open-menu">
+        <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+        <div class="header__logo-container">
+            <img class="header__logo" src="img/logo-Syntex.png">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#profile">Inicio</a></li>
+                <li class="header__nav-item"><a href="#portfolio">Soluciones</a></li>
+                <li class="header__nav-item"><a href="#login">Acceso</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile" id="profile">
+        <div class="profile__wrapper">
+            <div class="profile__img-container">
+                <img src="img/Inteligencia.jpg" class="profile__img">
+            </div>
+            <div class="profile__data-container">
+                <div class="profile__data">
+                    <div class="profile__description">
+                        <h1>¿Qué es Syntex?</h1>
+                        <p>
+                            Syntex es una solución digital diseñada para ayudar a empresas pequeñas y medianas a gestionar su inventario de forma eficiente, automatizada y sin errores.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="portfolio" id="portfolio">
+    <h2 class="portfolio__title">Nuestras soluciones</h2>
+    <div class="portfolio__project-container">
+        <div class="portfolio__project">
+            <h2 class="portfolio__project-name">Sistema de inventario IA</h2>
+            <p>Software inteligente para controlar productos y ventas.</p>
+        </div>
+        <div class="portfolio__project">
+            <h2 class="portfolio__project-name">Control en tiempo real</h2>
+            <p>Monitorea tu stock al instante desde cualquier lugar.</p>
+        </div>
+        <div class="portfolio__project">
+            <h2 class="portfolio__project-name">Alertas automáticas</h2>
+            <p>Notificaciones de stock bajo y productos por vencer.</p>
+        </div>
+        <div class="portfolio__project">
+            <h2 class="portfolio__project-name">Reportes inteligentes</h2>
+            <p>Análisis de ventas, rotación y tendencias del mercado.</p>
+        </div>
+        <div class="portfolio__project">
+            <h2 class="portfolio__project-name">Dashboard intuitivo</h2>
+            <p>Panel de control fácil de usar con métricas clave.</p>
+        </div>
+        <div class="portfolio__project">
+            <h2 class="portfolio__project-name">Integración total</h2>
+            <p>Conecta con POS, e-commerce y sistemas contables.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- SECCIÓN DE LOGIN (antes formulario de contacto) -->
+    <section class="form" id="login">
+        <h2 class="form__title">Iniciar sesión</h2>
+        <form class="form__form" id="loginForm">
+            <div class="form__input-container">
+                <label>Usuario o email
+                    <input type="email" id="email" placeholder="usuario@ejemplo.com" required>
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label>Contraseña
+                    <input type="password" id="password" placeholder="********" required>
+                </label>
+            </div>
+            <div class="form__input-container">
+                <input type="submit" value="Ingresar →">
+            </div>
+            <div class="form__input-container" style="text-align: center; margin-top: 10px;">
+                <a href="#" style="color: #48e; text-decoration: none; font-size: 0.8rem;">¿Olvidaste tu contraseña?</a>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <strong>Syntex</strong> - Optimiza tu inventario con inteligencia
+    </footer>
+
+    <script>
+        // REDIRECCIÓN AL HACER LOGIN
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Validación simple (opcional)
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if(email && password) {
+                // Redirige a la página principal (la del sidebar)
+                window.location.href = "index.html";
+            } else {
+                alert('Por favor ingresa tu usuario y contraseña');
+            }
+        });
+    </script>
+</body>
+</html>

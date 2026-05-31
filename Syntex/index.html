@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Syntex - Solución inteligente para gestionar inventarios con IA">
+    <title>Syntex | Optimiza tu inventario con inteligencia</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+
+        <!-- Botón toggle del menú -->
+        <div class="sidebar__toggle">
+            <input type="checkbox" id="menu-checkbox" aria-label="Abrir o cerrar menú lateral">
+            <label for="menu-checkbox" class="material-symbols-outlined menu-icon menu-icon--close" aria-hidden="true">close</label>
+            <label for="menu-checkbox" class="material-symbols-outlined menu-icon menu-icon--open" aria-hidden="true">double_arrow</label>
+        </div>
+
+        <!-- Logo -->
+        <div class="sidebar__logo">
+            <img src="img/logo-Syntex.png" alt="Syntex - Volver al inicio" class="sidebar__logo-img">
+        </div>
+
+        <!-- Navegación principal -->
+        <nav class="sidebar__nav" aria-label="Menú principal">
+            <ul class="sidebar__menu">
+                <li class="sidebar__item">
+                    <span class="material-symbols-outlined" aria-hidden="true">home</span>
+                    <a href="#que-es">Syntex</a>
+                </li>
+                <li class="sidebar__item">
+                    <span class="material-symbols-outlined" aria-hidden="true">warning</span>
+                    <a href="#problemas">Problemas</a>
+                </li>
+                <li class="sidebar__item">
+                    <span class="material-symbols-outlined" aria-hidden="true">lightbulb</span>
+                    <a href="#solucion">Solución</a>
+                </li>
+                <li class="sidebar__item">
+                    <span class="material-symbols-outlined" aria-hidden="true">trending_up</span>
+                    <a href="#beneficios">Beneficios</a>
+                </li>
+                <li class="sidebar__item">
+                    <span class="material-symbols-outlined" aria-hidden="true">settings</span>
+                    <a href="#funcionamiento">Funcionamiento</a>
+                </li>
+                <li class="sidebar__item">
+                    <span class="material-symbols-outlined" aria-hidden="true">dashboard</span>
+                    <a href="#caracteristicas">Características</a>
+                </li>
+                <li class="sidebar__item">
+                    <span class="material-symbols-outlined" aria-hidden="true">payments</span>
+                    <a href="#planes">Planes</a>
+                </li>
+                <li class="sidebar__item">
+                    <span class="material-symbols-outlined" aria-hidden="true">contact_mail</span>
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Perfil de usuario -->
+        <!-- Perfil / Login -->
+        <div class="sidebar__profile">
+            <a href="login.html" class="sidebar__item item--profile" style="text-decoration: none;">
+                <span class="material-symbols-outlined" aria-hidden="true">login</span>
+                <span class="profile-option">Iniciar sesión</span>
+            </a>
+        </div>
+        </div>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+        <h1 class="main-title">Syntex</h1>
+        <p class="tagline">Optimiza tu inventario con inteligencia</p>
+
+        <section id="que-es" class="content-section">
+            <h2>¿Qué es Syntex?</h2>
+            <p>Syntex es una solución digital diseñada para ayudar a empresas pequeñas y medianas a gestionar su inventario de forma eficiente, automatizada y sin errores.</p>
+            <p>Nuestra misión es simplificar la administración de inventarios y ayudarte a tomar mejores decisiones con datos en tiempo real.</p>
+        </section>
+
+        <section id="problemas" class="content-section">
+            <h2>Problemas que solucionamos</h2>
+            <ul>
+                <li>No sabes exactamente cuánto inventario tienes.</li>
+                <li>Pierdes productos o tienes faltantes.</li>
+                <li>Llevas todo de forma manual.</li>
+                <li>Tomas decisiones sin información clara.</li>
+            </ul>
+        </section>
+
+        <section id="solucion" class="content-section">
+            <h2>Nuestra solución</h2>
+            <ul>
+                <li>Controlar tu inventario en tiempo real.</li>
+                <li>Recibir alertas automáticas.</li>
+                <li>Analizar movimientos de productos.</li>
+                <li>Obtener recomendaciones inteligentes.</li>
+            </ul>
+        </section>
+
+        <section id="beneficios" class="content-section">
+            <h2>Beneficios clave</h2>
+            <ul>
+                <li>Ahorra tiempo en la gestión.</li>
+                <li>Reduce errores humanos.</li>
+                <li>Mejora la organización.</li>
+                <li>Toma decisiones más inteligentes.</li>
+                <li>Aumenta la eficiencia del negocio.</li>
+            </ul>
+        </section>
+
+        <section id="funcionamiento" class="content-section">
+            <h2>¿Cómo funciona?</h2>
+            <ol>
+                <li>Registra tus productos en el sistema.</li>
+                <li>Syntex analiza tu inventario automáticamente.</li>
+                <li>Recibe reportes y recomendaciones en tiempo real.</li>
+            </ol>
+        </section>
+
+        <section id="caracteristicas" class="content-section">
+            <h2>Características principales</h2>
+            <ul>
+                <li>Panel de control intuitivo.</li>
+                <li>Reportes automáticos.</li>
+                <li>Alertas de stock bajo.</li>
+                <li>Acceso desde cualquier dispositivo.</li>
+                <li>Integración con ventas.</li>
+            </ul>
+        </section>
+
+        <section id="planes" class="content-section">
+            <h2>Planes</h2>
+            <div class="plans-container">
+                <div class="plan-card">
+                    <h3>Plan Básico</h3>
+                    <p class="plan-price">$29/mes</p>
+                    <ul>
+                        <li>Hasta 500 productos</li>
+                        <li>Reportes básicos</li>
+                        <li>Soporte por email</li>
+                    </ul>
+                </div>
+                <div class="plan-card">
+                    <h3>Plan Profesional</h3>
+                    <p class="plan-price">$79/mes</p>
+                    <ul>
+                        <li>Hasta 5000 productos</li>
+                        <li>Reportes avanzados</li>
+                        <li>Soporte prioritario</li>
+                        <li>Alertas en tiempo real</li>
+                    </ul>
+                </div>
+                <div class="plan-card">
+                    <h3>Plan Empresarial</h3>
+                    <p class="plan-price">Personalizado</p>
+                    <ul>
+                        <li>Productos ilimitados</li>
+                        <li>API personalizada</li>
+                        <li>Cuenta dedicada</li>
+                        <li>Capacitación incluida</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE CONTACTO CON WHATSAPP (sin botón flotante) -->
+        <section id="contacto" class="contact-section">
+            <h2 class="contact-section__title">¿Necesitas ayuda?</h2>
+            <p class="contact-section__subtitle">Contáctanos y te responderemos a la brevedad</p>
+
+            <div class="contact-section__container">
+                <!-- Información de contacto -->
+                <div class="contact-info">
+                    <div class="contact-info__item">
+                        <span class="material-symbols-outlined">mail</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>walnerm75@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info__item">
+                        <span class="material-symbols-outlined">phone</span>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+50 6 88766967</p>
+                        </div>
+                    </div>
+                    <div class="contact-info__item">
+                        <span class="material-symbols-outlined">schedule</span>
+                        <div>
+                            <h4>Horario</h4>
+                            <p>Lun a Vie: 9am - 6pm</p>
+                        </div>
+                    </div>
+                    <div class="contact-info__item">
+                        <span class="material-symbols-outlined">location_on</span>
+                        <div>
+                            <h4>Oficina</h4>
+                            <p>Nicaragua, Nueva Guinea</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario de contacto que envía a WhatsApp -->
+                <form class="contact-form" id="whatsappForm">
+                    <div class="contact-form__group">
+                        <input type="text" id="whatsapp_nombre" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="contact-form__group">
+                        <input type="email" id="whatsapp_email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="contact-form__group">
+                        <input type="tel" id="whatsapp_telefono" placeholder="Teléfono (opcional)">
+                    </div>
+                    <div class="contact-form__group">
+                        <textarea id="whatsapp_mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                    </div>
+                    <button type="submit" class="contact-form__button">Enviar mensaje por WhatsApp →</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript para el menú colapsable y WhatsApp -->
+    <script>
+        // Menú colapsable
+        (function() {
+            const checkbox = document.getElementById('menu-checkbox');
+            const sidebar = document.getElementById('sidebar');
+
+            if (checkbox && sidebar) {
+                checkbox.addEventListener('change', function() {
+                    if (this.checked) {
+                        sidebar.classList.add('sidebar--collapsed');
+                    } else {
+                        sidebar.classList.remove('sidebar--collapsed');
+                    }
+                });
+            }
+        })();
+
+        // Formulario que envía a WhatsApp
+        const whatsappForm = document.getElementById('whatsappForm');
+        if (whatsappForm) {
+            whatsappForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                const nombre = document.getElementById('whatsapp_nombre').value;
+                const email = document.getElementById('whatsapp_email').value;
+                const telefono = document.getElementById('whatsapp_telefono').value;
+                const mensaje = document.getElementById('whatsapp_mensaje').value;
+
+                // Construir el mensaje para WhatsApp
+                let texto = `*Nuevo mensaje desde Syntex*%0A%0A`;
+                texto += `*Nombre:* ${nombre}%0A`;
+                texto += `*Email:* ${email}%0A`;
+                if(telefono) texto += `*Teléfono:* ${telefono}%0A`;
+                texto += `*Mensaje:* ${mensaje}`;
+
+                // ⚠️ CAMBIA ESTE NÚMERO POR EL TUYO ⚠️
+                window.open(`https://wa.me/81262940?text=${texto}`, '_blank');
+
+                alert('Serás redirigido a WhatsApp para enviar el mensaje');
+                this.reset();
+            });
+        }
+    </script>
+</body>
+</html>
