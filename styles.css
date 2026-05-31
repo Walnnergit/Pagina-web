@@ -167,7 +167,7 @@ h1 {
         flex-direction: row;
         padding: 20px;
         background-color: transparent;
-        height: 150vh;
+        height: 100vh;
         margin: auto;
     }
 
@@ -454,7 +454,7 @@ footer {
 }
 
 /* ============================================
-   ARREGLAR TEXTO QUE SE SALE DE LA IMAGEN
+ARREGLAR TEXTO QUE SE SALE DE LA IMAGEN
    ============================================ */
 
 .profile__data-container {
