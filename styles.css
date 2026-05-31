@@ -452,3 +452,46 @@ footer {
         opacity: 1;
     }
 }
+
+/* ============================================
+   ARREGLAR TEXTO QUE SE SALE DE LA IMAGEN
+   ============================================ */
+
+.profile__data-container {
+    overflow-y: auto;
+    max-height: none;
+    word-wrap: break-word;
+}
+
+.profile__description {
+    width: 100%;
+}
+
+.profile__description ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.profile__description li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+.profile__description p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .profile__data-container {
+        padding: 15px;
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+    .profile__description li {
+        font-size: 0.85rem;
+    }
+}
