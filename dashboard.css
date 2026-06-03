@@ -162,7 +162,7 @@ SIDEBAR STYLES
    ============================================ */
 
 .sidebar {
-    background-color: var(--sidebar-color);
+    background-color: #999;
     position: fixed;
     height: 100dvh;
     width: clamp(220px, 20vw, 300px);
