@@ -19,18 +19,16 @@ body {
     --bg-color: color-mix(in srgb, #26f 70%, #fff);
     --sidebar-color: #fff;
     --dark-color: #36f;
-    --text-color: #333;
+    --color-blue: #48e;
     background-color: var(--sidebar-color);
     font-family: 'Montserrat', system-ui, sans-serif;
 }
 
-/* ============================================
-HEADER / NAVEGACIÓN (corregido sin azul)
-   ============================================ */
+/*------ HEADER / NAVEGACIÓN -------*/
 
 .header {
     max-height: 50px;
-    background-color: #fff;
+    background-color: var(--sidebar-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,11 +36,11 @@ HEADER / NAVEGACIÓN (corregido sin azul)
     z-index: 10;
     text-align: center;
     font-size: 20px;
-    color: #48e;
+    color: var(--color-blue);
 }
 
 .header__open-nav-button {
-    color: #48e;
+    color:  var(--color-blue);
     font-size: 3rem;
     font-weight: 600;
     position: absolute;
@@ -57,7 +55,7 @@ HEADER / NAVEGACIÓN (corregido sin azul)
 .header__open-nav-button:active {
     outline: none;
     background: transparent;
-    color: #48e;
+    color:  var(--color-blue);
 }
 
 .header__checkbox {
@@ -71,7 +69,7 @@ HEADER / NAVEGACIÓN (corregido sin azul)
 
 .header__nav {
     display: none;
-    background-color: #fff;
+    background-color: var(--sidebar-color);
     position: absolute;
     height: 100vh;
     width: 100vw;
@@ -118,12 +116,12 @@ HEADER / NAVEGACIÓN (corregido sin azul)
 .header__nav-item a:active {
     outline: none;
     background: transparent;
-    color: #48e;
+    color:  var(--color-blue);
 }
 
 .header__nav-item a:hover {
     text-decoration: underline;
-    color: #48e;
+    color:  var(--color-blue);
 }
 
 /* -------- HEADER QUERIES --------*/
@@ -157,9 +155,7 @@ HEADER / NAVEGACIÓN (corregido sin azul)
     }
 }
 
-/* ============================================
-SIDEBAR STYLES
-   ============================================ */
+/*------SIDEBAR STYLES-----*/
 
 .sidebar {
     background-color: #999;
@@ -192,7 +188,7 @@ SIDEBAR STYLES
 
 .menu-icon {
     background-color: var(--dark-color);
-    color: white;
+    color: var(--sidebar-color);
     font-size: 1.5rem;
     border-radius: 50%;
     padding: 0.5rem;
@@ -312,7 +308,7 @@ SIDEBAR STYLES
 .item--profile {
     margin: 12px;
     width: fit-content;
-    color: var(--text-color);
+    color: var(--color-blue);
 }
 
 .item--profile:hover {
@@ -329,7 +325,7 @@ SIDEBAR STYLES
     margin-left: clamp(220px, 20vw, 300px);
     padding: 40px;
     min-height: 100vh;
-    background-color: #fff;
+    background-color: var(--sidebar-color);
     transition: all 0.3s ease;
 }
 
@@ -445,7 +441,7 @@ SIDEBAR STYLES
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: 2rem;
-    background: #fff;
+    background: var(--sidebar-color);
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
@@ -453,7 +449,7 @@ SIDEBAR STYLES
 
 .contact-info {
     background: #18233f;
-    color: #fff;
+    color: var(--sidebar-color);
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -468,7 +464,7 @@ SIDEBAR STYLES
 
 .contact-info__item .material-symbols-outlined {
     font-size: 1.8rem;
-    color: #48e;
+    color:  var(--color-blue);
 }
 
 .contact-info__item h4 {
@@ -502,13 +498,13 @@ SIDEBAR STYLES
 .contact-form__group input:focus,
 .contact-form__group textarea:focus {
     outline: none;
-    border-color: #48e;
+    border-color:  var(--color-blue);
     box-shadow: 0 0 0 3px rgba(68, 136, 238, 0.1);
 }
 
 .contact-form__button {
     background-color: #25D366;
-    color: #fff;
+    color: var(--sidebar-color);
     border: none;
     padding: 12px 24px;
     border-radius: 50px;
